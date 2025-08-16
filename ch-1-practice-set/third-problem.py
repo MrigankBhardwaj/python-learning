@@ -3,8 +3,14 @@
 # I am going to use Python built in OS and Platform modules
 import os
 import platform
+import wikipedia
 
 my_os_name =  os.name
 my_platform_name = platform.system
-print(my_os_name,"Os Name")
-print(my_platform_name,"Platform name")
+result = wikipedia.page("India#History")
+# print(my_os_name,"Os Name")
+# print(my_platform_name,"Platform name")
+print(result.summary)
+# Now I will install an external python module and use it 
+# I am going to install and use wikipedia module of pyhton
+# To install it run the command - pip install wikipedia
